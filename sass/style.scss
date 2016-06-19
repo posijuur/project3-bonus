@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(logo.css);
+@import url(figure.css);
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../css/fonts/tahoma.ttf');
+}
+@font-face {
+	font-family: 'Tahomab';
+	src: url('../css/fonts/tahomabd.ttf');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #282828;
+	
+}
+.page{
+	margin: 15px auto;
+	width: 830px;
+	background: url('../img/bgr.png') no-repeat;
+	background-size: cover;
+	padding: 50px 65px 30px 65px;
+	box-shadow: 0 3px 1px #1e1e1e;
+	color: #e6e6e6;
+	font-family: 'Tahoma';
+	
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	&_address{
+		margin-bottom: 17px;
+		margin-right: 5px;
+		font-size: 9px;
+		&_item{
+			a{
+				text-decoration: none;
+				color: #e6e6e6; 
+			}
+		}
+		&_item__size{
+			margin-bottom: 5px;
+			font-family: 'Tahomab';
+			font-size: 11px;
+		}
+		&_item__bmarg{
+			margin-bottom: 2px;
+		}
+	}
+}
+.main{
+	margin-top: -6px;
+}
+.content{
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer{
+	margin-top: 183px;
+	text-align: center;
+	font-size: 10px;
+}
