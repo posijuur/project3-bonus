@@ -76,6 +76,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   background-color: #282828;
 }
+body a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
 
 .page {
   margin: 15px auto;
